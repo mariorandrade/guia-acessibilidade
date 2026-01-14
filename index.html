@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Prático de Acessibilidade WCAG | Acessibilidade Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>Manual Prático de Acessibilidade WCAG <span class="version">2.2</span></h1>
+            <p>Da norma à execução: saiba exatamente o que a sua função deve entregar.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section class="info-section gray-bg">
+            <div class="section-title">
+                <h2>Orientação Direta, Sem Complicações</h2>
+            </div>
+            
+            <p class="intro-text">
+                Muitas vezes, as diretrizes da WCAG parecem abstratas ou difíceis de interpretar. 
+                Este guia interativo foi criado para <strong>eliminar a incerteza</strong>: ele traduz os critérios técnicos 
+                em ações concretas, separando o que compete a cada perfil profissional.
+            </p>
+            <p class="intro-text">A acessibilidade digital garante que produtos e serviços podem ser utilizados por todas as pessoas, independentemente de limitações visuais, auditivas, motoras, cognitivas ou circunstanciais. Este guia consolidado reúne todas as guidelines e success criteria da WCAG 2.2, organizados de forma prática e orientada para equipas multidisciplinares.</p>
+        </section>
+
+        <section class="info-section gray-bg">
+            <div class="section-title">
+                <h2>Quem deve fazer o quê?</h2>
+            </div>
+            <p class="intro-text">A acessibilidade não é responsabilidade de uma única função mas sim um esforço coletivo. 
+                Cada papel tem impacto direto na experiência final do utilizador e na conformidade com a WCAG. 
+                Ela começa na definição do produto, continua no design, é implementada no desenvolvimento, ganha clareza no conteúdo e é validada por QA.</p>
+            <p class="intro-text">
+                Para que a acessibilidade aconteça, cada papel tem tarefas únicas. 
+                Selecione o seu perfil para filtrar as suas <strong>responsabilidades específicas</strong> e 
+                entender como o seu trabalho se encaixa no esforço coletivo:
+            </p>
+
+            <p class="intro-text">Este guia permite filtrar responsabilidades por papel: Product, Design, Development, Content e QA.</p>
+
+            <div class="roles-explanation">
+                <div class="role-box product">
+                    <p><strong>Product & Management:</strong> Responsável pelo planeamento e definição dos requisitos de negócio.</p>
+                    <p>Exemplo de responsabilidades principais:</p>
+                    <ul>
+                        <li>Garantir que os requisitos estão de acordo com as necessidades de acessibilidade.</li>
+                        <li>Escreve user stories com critérios de aceitação que garantam a acessibilidade.</li>
+                    </ul>
+                    <p>Exemplo:</p>
+                    <ul>
+                        <li>User story incorreta: “Adicionar vídeo na página.”<br />
+                            User story correta: “Adicionar vídeo demonstrativo página. Este vídeo deve incluir legendas e controlo de reprodução visiveis que permitam ao utilizador pausar, parar ou ocultar qualquer movimento, animação.”
+                        </li>
+                    </ul>
+                </div>
+                <div class="role-box design">
+                    <p><strong>Design & UX:</strong> Define como o utilizador vê, entende e interage com o produto.</p>
+
+                    <p>Exemplo de responsabilidades principais:</p>
+                    <ul>
+                        <li>Cria layouts acessíveis.</li>
+                        <li>Garante contraste, hierarquia visual, espaçamento e navegação.</li>
+                        <li>Documenta estados, foco e interações.</li>
+                    </ul>
+                    <p>Exemplos:</p>
+                    <ul>
+                        <li>Garante que o esquema de cores é acessivel em todas as interações.</li>
+                        <li>Certifica-se de que existe um estilo definido para o foco quando o utilizador navega com o teclado.</li>
+                        <li>Assegura que a navegação é clara e consistente.</li>
+                    </ul>   
+                </div>
+                <div class="role-box development">
+                    <p><strong>Development:</strong> Implementa acessibilidade no código. Foca-se em semântica HTML, suporte a teclado, ARIA e robustez de código.</p>
+
+                    <p>Exemplo de responsabilidades principais:</p>
+                    <ul>
+                        <li>Usa elementos HTML semânticos.</li>
+                        <li>Garante navegação correta por teclado.</li>
+                        <li>Implementa atributos ARIA quando necessário.</li>
+                    </ul>
+                    <p>Exemplos:</p>
+                    <ul>
+                       <li>&lt;button&gt;&lt;i class="icon icon-download"&gt;&lt;/i&gt;&lt;/button&gt; sem role e sem atributo ARIA → inacessível.</li>
+                       <li>Modal sem focus trap → perda de contexto.</li>
+                       <li>Modal sem interactividade com teclado. Ex: Usar tecla ESC para fechar a modal.</li>
+                    </ul>
+                </div>
+                <div class="role-box content">
+                    <p><strong>Content:</strong> Foca-se na clareza do texto, nomes descritivos e labels.</p>
+                    
+                    <p>Exemplo de responsabilidades principais:</p>
+                    <ul>
+                        <li>Cria labels descritivos.</li>
+                        <li>Escreve mensagens de erro úteis.</li>
+                        <li>Mantém headings coerentes.</li>
+                    </ul>
+                    <p>Exemplos:</p>
+                    <ul>
+                        <li>Label “Nome” → ambíguo. Melhor: “Nome completo”.</li>
+                        <li>Erro “Campo Inválido” → inútil. Melhor: “O email deve ter o formato nome@domínio.com”.</li>
+                    </ul>
+                </div>
+                <div class="role-box qa">
+                    <p><strong>QA (Quality Assurance):</strong> Foca-se na validação final de fluxos, testes com leitores de ecrã e conformidade técnica.</p>
+                    <p>Exemplo de responsabilidades principais:</p>
+                    <ul>
+                        <li>Testa navegação por teclado.</li>
+                        <li>Valida foco, ordem e comportamento.</li>
+                        <li>Usa ferramentas de teste automáticas de forma a complementar os testes manuais e não ao contrário.</li>
+                    </ul>
+                    <p>Exemplos:</p>
+                    <ul>
+                        <li>Botão invisível ao tab.</li>
+                        <li>Foco perdido após fechar modal.</li>
+                        <li>Imagem sem descrição alternativa.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <p class="intro-text">As WCAG organizam-se em quatro princípios (POUR), 13 guidelines e 78 success criteria. As guidelines são orientações gerais; os success criteria são requisitos testáveis que determinam conformidade nos níveis A, AA ou AAA.</p>
+
+            <div class="info-grid">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><span>P</span>ercecionável</h3>
+                        <p>O conteúdo deve ser visível ou audível para todos, sem exceções.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><span>O</span>perável</h3>
+                        <p>A interface deve ser navegável, independentemente do dispositivo usado.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><span>U</span>mpreensível</h3>
+                        <p>O funcionamento e o texto devem ser claros e fáceis de seguir.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><span>R</span>obusto</h3>
+                        <p>O código deve ser limpo e compatível com tecnologias assistivas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="explorer-section">
+            <div class="controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Pesquisar por critério, número (ex: 1.1.1) ou tag...">
+                </div>
+
+                <div class="filters">
+                    <select id="roleFilter">
+                        <option value="all">Todos os Papéis</option>
+                        <option value="design">Design</option>
+                        <option value="development">Development</option>
+                        <option value="content">Content</option>
+                        <option value="qa">QA</option>
+                        <option value="product">Product</option> </select>
+
+                    <select id="levelFilter">
+                        <option value="all">Todos os Níveis</option>
+                        <option value="A">Nível A</option>
+                        <option value="AA">Nível AA</option>
+                        <option value="AAA">Nível AAA</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="wcagGrid" class="wcag-grid">
+                </div>
+        </section>
+
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Manual Prático de Acessibilidade WCAG 2.2 | Criado por <a href="https://marioruiandrade.com" target="_blank">Mário Andrade</a></p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
