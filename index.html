@@ -16,7 +16,7 @@
         </div>
     </header>
 
-    <div class="container">
+    <main class="container">
         
         <section class="info-section gray-bg">
             <div class="section-title">
@@ -88,13 +88,13 @@
                     </ul>
                     <p>Exemplos:</p>
                     <ul>
-                       <li>&lt;button&gt;&lt;i class="icon icon-download"&gt;&lt;/i&gt;&lt;/button&gt; sem role e sem atributo ARIA → inacessível.</li>
-                       <li>Modal sem focus trap → perda de contexto.</li>
-                       <li>Modal sem interactividade com teclado. Ex: Usar tecla ESC para fechar a modal.</li>
+                       <li>&lt;button&gt;&lt;i class="icon icon-download"&gt;&lt;/i&gt;&lt;/button&gt; sem texto alternativo → inacessível.</li>
+                       <li>Modal sem focus trap permite que um utilizador sai fora de contexto, especialmente um utilizador invisual.</li>
+                       <li>Modal deve permitir que o utilizador possa fechar a modal usando o teclado. Ex: Usando a tecla ESC.</li>
                     </ul>
                 </div>
                 <div class="role-box content">
-                    <p><strong>Content:</strong> Foca-se na clareza do texto, nomes descritivos e labels.</p>
+                    <p><strong>Content Writer / UX Writter:</strong> Foca-se na clareza do texto, nomes descritivos e labels.</p>
                     
                     <p>Exemplo de responsabilidades principais:</p>
                     <ul>
@@ -155,19 +155,19 @@
             <div class="controls">
                 <div class="search-box">
                     <i class="fas fa-search"></i>
-                    <input type="text" id="searchInput" placeholder="Pesquisar por critério, número (ex: 1.1.1) ou tag...">
+                    <input type="text" id="searchInput" placeholder="Pesquisar por titulo, número (ex: 1.1.1) ou tag...">
                 </div>
 
                 <div class="filters">
-                    <select id="roleFilter">
+                    <select id="roleFilter" aria-label="Filtrar por papel">
                         <option value="all">Todos os Papéis</option>
                         <option value="design">Design</option>
                         <option value="development">Development</option>
                         <option value="content">Content</option>
-                        <option value="qa">QA</option>
+                        <option value="qa">QA / Tester</option>
                         <option value="product">Product</option> </select>
 
-                    <select id="levelFilter">
+                    <select id="levelFilter" aria-label="Filtrar por nível de conformidade">
                         <option value="all">Todos os Níveis</option>
                         <option value="A">Nível A</option>
                         <option value="AA">Nível AA</option>
@@ -176,15 +176,14 @@
                 </div>
             </div>
 
-            <div id="wcagGrid" class="wcag-grid">
-                </div>
+            <div id="wcagGrid" class="wcag-grid" aria-live="polite"></div>
         </section>
 
-    </div>
+    </main>
 
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2026 Manual Prático de Acessibilidade WCAG 2.2 | Criado por <a href="https://marioruiandrade.com" target="_blank">Mário Andrade</a></p>
+            <p>&copy; 2026 Manual Prático de Acessibilidade WCAG 2.2 | Criado por <a href="https://marioruiandrade.com" target="_blank">Mário Andrade <i class="fas fa-external-link-alt"></i></a></p>
         </div>
     </footer>
 
