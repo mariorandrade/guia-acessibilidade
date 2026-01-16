@@ -269,6 +269,11 @@ button {
     margin-top: 30px;
 }
 
+.main-footer a:hover {
+    text-decoration: underline;
+}
+
 .main-footer a {
     color: var(--level-a-text);
 }
+
