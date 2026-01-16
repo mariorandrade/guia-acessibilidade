@@ -99,7 +99,6 @@ button {
     vertical-align: middle;
 }
 
-
 /* --- SECÇÕES DE INFORMAÇÃO --- */
 .info-section { padding: 40px 0; }
 .section-title { display: flex; align-items: center; gap: 15px; margin-bottom: 25px; }
@@ -240,7 +239,6 @@ button {
 .doc-link { margin-top: auto; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 0.9rem; }
 .doc-link:hover { text-decoration: underline; }
 
-
 .no-results {
     text-align: center;
     grid-column: 1 / -1;
@@ -264,11 +262,13 @@ button {
     .wcag-grid { grid-template-columns: 1fr; }
 }
 
-
-
 /* --- FOOTER --- */
 .main-footer {
     padding: 30px 0;
     text-align: center;
     margin-top: 30px;
+}
+
+.main-footer a {
+    color: var(--level-a-text);
 }
